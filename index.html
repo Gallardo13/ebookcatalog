@@ -1,0 +1,28 @@
+{{ define "index"}}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<title>ebookcatalog</title>
+<body align="center">
+
+<p><img src="/static/logo.jpg"></p>
+
+{{ range $value := .}}
+<p style="margin-top:100px" ><b>{{ $value.Title }}</b></p>
+<p><img width="300" height="400" src={{ $value.Picture }}></p>
+<p>{{ $value.Author }}</p>
+<p>{{ $value.Language }}</p>
+<p>{{ $value.Description }}</p>
+<p><a href={{ $value.Name }}>Скачать книгу</a></p>
+<p></p>
+{{ end }}
+
+</body>
+</html>
+
+{{ end }}
+
+
