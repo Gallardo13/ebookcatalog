@@ -2,14 +2,13 @@ package main
 
 import (
 	"archive/zip"
-
+	"encoding/xml"
 	"html/template"
 	"io"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
-	"regexp"
 	"strconv"
 	"strings"
 )
@@ -18,7 +17,7 @@ import (
 var t *template.Template
 
 // переменная, присоединяющаяся к имени создаваемых файлов обложки и каждый раз увеличивающаяяся на единицу
-// для исключения случаев и одинаковым названием файлов обложек в разных книгах и их перезаписи
+// для исключения случаев с одинаковым названием файлов обложек в разных книгах и их перезаписи
 var i int
 
 // структура хранящая информацию о книгах
@@ -34,14 +33,51 @@ type Book struct {
 // slice книг
 var books []Book
 
+// структуры xml файлов
+type metaData struct {
+	XMLName     xml.Name `xml:"metadata"`
+	Author      string   `xml:"creator"`
+	Title       string   `xml:"title"`
+	Language    string   `xml:"language"`
+	Description string   `xml:"description"`
+}
+type item struct {
+	XMLName   xml.Name `xml:"item"`
+	Href      string   `xml:"href,attr"`
+	Id        string   `xml:"id,attr"`
+	MediaType string   `xml:"media-type,attr"`
+}
+type manifest struct {
+	XMLName xml.Name `xml:"manifest"`
+	Items   []item   `xml:"item"`
+}
+type Package struct {
+	XMLName  xml.Name `xml:"package"`
+	Metadata metaData `xml:"metadata"`
+	Manifest manifest `xml:"manifest"`
+}
+type rootfile struct {
+	XMLName   xml.Name `xml:"rootfile"`
+	FullPath  string   `xml:"full-path,attr"`
+	MediaType string   `xml:"media-type, attr"`
+}
+type rootfiles struct {
+	XMLName  xml.Name `xml:"rootfiles"`
+	Rootfile rootfile `xml:"rootfile"`
+}
+type Container struct {
+	XMLName   xml.Name  `xml:"container"`
+	Rootfiles rootfiles `xml:"rootfiles"`
+}
+
 // папка с книгами
 const (
-	mainDirectory = "/Users/Gallardo/Desktop/golang/ebookcatalog/files/books/"
+	mainDirectory = "files/books/"
 )
 
 func init() {
 	var err error
-	t, err = template.ParseFiles("/Users/Gallardo/Desktop/golang/ebookcatalog/index.html")
+	t, err = template.ParseFiles("index.html")
 	if err != nil {
 		log.Fatal("error:", err.Error())
 	}
@@ -53,18 +89,18 @@ func main() {
 
 	log.Printf("Server start.")
 	http.HandleFunc("/", page)
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("/Users/Gallardo/Desktop/golang/ebookcatalog/files"))))
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("files"))))
 
 	var book string
 
-	directory, err := os.Open("/Users/Gallardo/Desktop/golang/ebookcatalog/files/books/")
+	directory, err := os.Open(mainDirectory)
 	if err != nil {
-		log.Fatal("Error")
+		log.Fatal("Error: ", err)
 	}
 	defer directory.Close()
 	fileNames, err := directory.Readdirnames(0)
 	if err != nil {
-		log.Fatal("Error0")
+		log.Fatal("Error0: ", err)
 	}
 
 	for _, file := range fileNames {
@@ -86,115 +122,95 @@ func page(writer http.ResponseWriter, request *http.Request) {
 
 // функция обрабатывает книгу book, вычленяя нужную информацию
 func process(book string) {
+
+	reader, err := zip.OpenReader(book)
+	if err != nil {
+		log.Println("Error: can't open book")
+		return
+	}
+	defer reader.Close()
+
 	// разархивирование файла xml хранящего информацию о расположении файла с метаданными
-	if err := unpackFile(book, "", 0); err != nil {
+	if err := unpackFile(reader, book, "", 0); err != nil {
 		log.Println(book)
-		log.Fatal("Error1")
+		log.Fatal("Error1: ", err)
 	}
 
 	// нахождение расположения файла с метаданными
 	data, err := ioutil.ReadFile(mainDirectory + "META-INF/container.xml")
 	if err != nil {
 		log.Println(book)
-		log.Fatal("Error2")
+		log.Fatal("Error2: ", err)
 	}
-	regex1, _ := regexp.Compile("<rootfile full-path=\"([a-zA-Z0-9]|/|(_))*.[a-z]*\"")
-	str := string(regex1.Find(data))
-	str = strings.Replace(str, "<rootfile full-path=\"", "", 1)
-	str = strings.Replace(str, "\"", "", 1)
-	pathToMetaFile := mainDirectory + str
+	var c Container
+	xml.Unmarshal(data, &c)
+	pathToMetaFile := mainDirectory + c.Rootfiles.Rootfile.FullPath
 
 	// разархивирование файла с метаданными
-	if err := unpackFile(book, str, 1); err != nil {
+	if err := unpackFile(reader, book, c.Rootfiles.Rootfile.FullPath, 1); err != nil {
 		log.Println(book)
-		log.Fatal("Error3")
+		log.Fatal("Error3: ", err)
 	}
 
-	// нахождение нужной информации о книге
+	// чтение нужной информации из файла с данными о книге
 	data, err = ioutil.ReadFile(pathToMetaFile)
 	if err != nil {
 		log.Println(book)
-		log.Fatal("Error4")
+		log.Fatal("Error4: ", err)
 	}
+	var p Package
+	xml.Unmarshal(data, &p)
 
 	// нахождение обложки
-	regex2, _ := regexp.Compile("href=\"([a-zA-Z0-9]|/|(_))*.jpg\"")
-
-	str = string(regex2.Find(data))
-	str = strings.Replace(str, "href=\"", "", 1)
-	str = strings.Replace(str, "\"", "", 1)
-	m := strings.Split(str, "/")
-	if len(m) > 1 {
-		str = m[len(m)-1]
+	var str string
+	for _, item := range p.Manifest.Items {
+		if (strings.Contains(item.Href, "co") || strings.Contains(item.Id, "co")) && item.MediaType == "image/jpeg" {
+			str = item.Href
+			break
+		}
 	}
 
 	// разархивирование обложки
-	if err = unpackFile(book, str, 2); err != nil {
+	if err = unpackFile(reader, book, str, 2); err != nil {
 		log.Println(book)
-		log.Fatal("Error5")
+		log.Fatal("Error5: ", err)
+	}
+	split := strings.Split(str, "/")
+	if len(split) > 1 {
+		str = split[len(split)-1]
 	}
 	// окончательный путь к распакованной обложке
 	pathToPictureFile := mainDirectory + "pictures/" + strconv.Itoa(i) + str
 
-	// нахождение автора
-	regex3, _ := regexp.Compile("opf:role=\"aut\">(.*)</dc:creator>")
-	author := string(regex3.Find(data))
-	author = strings.Replace(author, "opf:role=\"aut\">", "", 1)
-	author = strings.Replace(author, "</dc:creator>", "", 1)
-
-	//нахождение названия книги
-	regex4, _ := regexp.Compile("<dc:title>(.*)</dc:title>")
-	title := string(regex4.Find(data))
-	title = strings.Replace(title, "<dc:title>", "", 1)
-	title = strings.Replace(title, "</dc:title>", "", 1)
-
-	// нахождение языка
-	regex5, _ := regexp.Compile("((RFC3066\")|(dc:language))>(.*)</dc:language>")
-	language := string(regex5.Find(data))
-	language = strings.Replace(language, "</dc:language>", "", 1)
-	language = strings.Replace(language, "dc:language>", "", 1)
-	language = strings.Replace(language, "RFC3066\">", "", 1)
-
-	//нахождение краткого содержания
-	regex6, _ := regexp.Compile("<dc:description>(.|\n)*</dc:description>")
-	description := string(regex6.Find(data))
-	description = strings.Replace(description, "<dc:description>", "", 1)
-	description = strings.Replace(description, "</dc:description>", "", 1)
-
 	// изменение путей и информации для корректного отображения на сервере и добавление в slice книг
-	book = strings.Replace(book, "/Users/Gallardo/Desktop/golang/ebookcatalog/files/", "/static/", 1)
-	pathToPictureFile = strings.Replace(pathToPictureFile, "/Users/Gallardo/Desktop/golang/ebookcatalog/files/", "/static/", 1)
-	author = "Автор книги: " + author
-	switch language {
+	book = strings.Replace(book, "files/", "/static/", 1)
+	pathToPictureFile = strings.Replace(pathToPictureFile, "files/", "/static/", 1)
+	p.Metadata.Author = "Автор книги: " + p.Metadata.Author
+	switch p.Metadata.Language {
 	case "ru":
-		language = "Язык: Русский"
+		p.Metadata.Language = "Язык: Русский"
 	case "en":
-		language = "Язык: Английский"
+		p.Metadata.Language = "Язык: Английский"
 	case "fr":
-		language = "Язык: Французский"
+		p.Metadata.Language = "Язык: Французский"
 	case "de":
-		language = "Язык: Немецкий"
+		p.Metadata.Language = "Язык: Немецкий"
 	}
-	description = "Описание:" + description
-	books = append(books, Book{book, pathToPictureFile, author, title, language, description})
-	log.Println("Was added book: " + title)
+	p.Metadata.Description = "Описание:" + p.Metadata.Description
+	books = append(books, Book{book, pathToPictureFile, p.Metadata.Author, p.Metadata.Title, p.Metadata.Language, p.Metadata.Description})
+	log.Println("Was added book: " + p.Metadata.Title)
 }
 
 // функция находит нужный файл в архиве и распаковывает его с помощью функции createFile
-func unpackFile(book string, way string, flag int) error {
-	reader, err := zip.OpenReader(book)
-	if err != nil {
-		return err
-	}
-	defer reader.Close()
+func unpackFile(reader *zip.ReadCloser, book string, way string, flag int) error {
 	for _, zipFile := range reader.Reader.File {
 		switch flag {
 		case 0:
 			if zipFile.Name == "META-INF/container.xml" {
-				if err = os.MkdirAll("/Users/Gallardo/Desktop/golang/ebookcatalog/files/books/META-INF/", 0755); err != nil {
+				if err := os.MkdirAll("files/books/META-INF/", 0755); err != nil {
 					return err
 				}
-				if err = createFile(zipFile.Name, zipFile, 0); err != nil {
+				if err := createFile(zipFile.Name, zipFile, 0); err != nil {
 					return err
 				}
 			}
@@ -202,11 +218,11 @@ func unpackFile(book string, way string, flag int) error {
 			if zipFile.Name == way {
 				splitWay := strings.Split(way, "/")
 				if len(splitWay) > 1 {
-					if err = os.MkdirAll("/Users/Gallardo/Desktop/golang/ebookcatalog/files/books/"+splitWay[0]+"/", 0755); err != nil {
+					if err := os.MkdirAll("files/books/"+splitWay[0]+"/", 0755); err != nil {
 						return err
 					}
 				}
-				if err = createFile(zipFile.Name, zipFile, 0); err != nil {
+				if err := createFile(zipFile.Name, zipFile, 0); err != nil {
 					return err
 				}
 			}
@@ -216,10 +232,10 @@ func unpackFile(book string, way string, flag int) error {
 				way = splitWay[len(splitWay)-1]
 			}
 			if strings.Contains(zipFile.Name, way) {
-				if err = os.MkdirAll("/Users/Gallardo/Desktop/golang/ebookcatalog/files/books/pictures/", 0755); err != nil {
+				if err := os.MkdirAll("files/books/pictures/", 0755); err != nil {
 					return err
 				}
-				if err = createFile(way, zipFile, 1); err != nil {
+				if err := createFile(way, zipFile, 1); err != nil {
 					return err
 				}
 			}
@@ -236,10 +252,10 @@ func createFile(filename string, zipFile *zip.File, flag int) error {
 	var writer *os.File
 	var err error
 	if flag == 0 {
-		writer, err = os.Create("/Users/Gallardo/Desktop/golang/ebookcatalog/files/books/" + filename)
+		writer, err = os.Create("files/books/" + filename)
 	} else {
 		i++
-		writer, err = os.Create("/Users/Gallardo/Desktop/golang/ebookcatalog/files/books/pictures/" + strconv.Itoa(i) + filename)
+		writer, err = os.Create("files/books/pictures/" + strconv.Itoa(i) + filename)
 	}
 	if err != nil {
 		return err

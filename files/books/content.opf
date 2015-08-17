@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dc:creator opf:role="aut" opf:file-as="Walter,Henriette">Walter,Henriette</dc:creator>
+    <dc:description>Dans la veine de ses premiers best-sellers, Henriette Walter nous invite à nous lancer dans une passionnante odyssée étymologique en mêlant érudition, jeux et humour, et nous prouve que le latin est une langue encore bien vivante.
+      Saviez-vous qu'Olibrius était un empereur romain d'Occident (mort en 472), dont la légende a fait le symbole d'un homme incapable mais plein de jactance ?
+      Que minus est l'abréviation de minus habens, « qui a moins (d'intelligence) » ?
+      Que plusieurs albums d'Astérix ont été traduits en latin ?
+      Que les distributeurs de billets de la banque du Vatican se lisent en latin ?
+      C'est tout naturellement que nous employons tous les jours et sans y penser des mots comme lavabo, agenda, quiproquo ou constat, qui ont l'air tellement français mais qui sont en réalité des mots du latin sous leur forme d'origine, au même titre que consensus, placebo, a priori, vice versa, minus, lapsus, ipso facto ou referendum...
+      Mais que dire de motus et de rasibus ? Ne serait-ce pas plutôt du « latin de cuisine », ce pseudo-latin inventé par des érudits facétieux, toujours prêts à jouer avec les mots ?
+      En passant allègrement du latin de l'Église au latin des tribunaux, et du latin des naturalistes au latin d'Astérix, Henriette Walter propose un nouveau regard sur cette langue encore bien vivante dans les usages du XXIe siècle, et pleine de ressources, que l'on s'est trop vite empressé d'enterrer. Un ouvrage ludique et passionnant, ponctué d'anecdotes, de devinettes et de récréations, pour conjuguer humour et érudition.</dc:description>
+    <dc:date>2014-08-06T22:00:00+00:00</dc:date>
+    <dc:date opf:event="publication">2014</dc:date>
+    <meta name="cover" content="couv"/>
+    <dc:title>Minus, lapsus et mordicus</dc:title>
+    <meta name="calibre:title_sort" content="Minus, lapsus et mordicus"/>
+    <dc:publisher>Robert Laffont</dc:publisher>
+    <dc:subject>essai</dc:subject>
+    <dc:contributor opf:role="bkp">calibre (2.31.0) [http://calibre-ebook.com]</dc:contributor>
+    <meta name="calibre:author_link_map" content="{&quot;Walter,Henriette&quot;: &quot;&quot;}"/>
+    <dc:language>en</dc:language>
+    <dc:identifier opf:scheme="calibre">3fa7f93c-3848-4cbf-8998-74cefdea79aa</dc:identifier>
+    <meta name="calibre:user_metadata:#truefalsh" content="{&quot;link_column&quot;: &quot;value&quot;, &quot;is_multiple&quot;: null, &quot;rec_index&quot;: 23, &quot;is_custom&quot;: true, &quot;is_category&quot;: false, &quot;label&quot;: &quot;truefalsh&quot;, &quot;#value#&quot;: null, &quot;is_editable&quot;: true, &quot;#extra#&quot;: null, &quot;table&quot;: &quot;custom_column_1&quot;, &quot;colnum&quot;: 1, &quot;name&quot;: &quot;Début série&quot;, &quot;datatype&quot;: &quot;bool&quot;, &quot;column&quot;: &quot;value&quot;, &quot;search_terms&quot;: [&quot;#truefalsh&quot;], &quot;kind&quot;: &quot;field&quot;, &quot;display&quot;: {&quot;description&quot;: &quot;&quot;}, &quot;category_sort&quot;: &quot;value&quot;, &quot;is_csp&quot;: false, &quot;is_multiple2&quot;: {}}"/>
+    <meta name="calibre:user_metadata:#yesno" content="{&quot;link_column&quot;: &quot;value&quot;, &quot;is_multiple&quot;: null, &quot;rec_index&quot;: 25, &quot;is_custom&quot;: true, &quot;is_category&quot;: false, &quot;label&quot;: &quot;yesno&quot;, &quot;#value#&quot;: null, &quot;is_editable&quot;: true, &quot;#extra#&quot;: null, &quot;table&quot;: &quot;custom_column_3&quot;, &quot;colnum&quot;: 3, &quot;name&quot;: &quot;Lu&quot;, &quot;datatype&quot;: &quot;bool&quot;, &quot;column&quot;: &quot;value&quot;, &quot;search_terms&quot;: [&quot;#yesno&quot;], &quot;kind&quot;: &quot;field&quot;, &quot;display&quot;: {&quot;description&quot;: &quot;&quot;}, &quot;category_sort&quot;: &quot;value&quot;, &quot;is_csp&quot;: false, &quot;is_multiple2&quot;: {}}"/>
+    <meta name="calibre:user_metadata:#sino" content="{&quot;link_column&quot;: &quot;value&quot;, &quot;is_multiple&quot;: null, &quot;rec_index&quot;: 22, &quot;is_custom&quot;: true, &quot;is_category&quot;: false, &quot;label&quot;: &quot;sino&quot;, &quot;#value#&quot;: null, &quot;is_editable&quot;: true, &quot;#extra#&quot;: null, &quot;table&quot;: &quot;custom_column_2&quot;, &quot;colnum&quot;: 2, &quot;name&quot;: &quot;Atelier&quot;, &quot;datatype&quot;: &quot;bool&quot;, &quot;column&quot;: &quot;value&quot;, &quot;search_terms&quot;: [&quot;#sino&quot;], &quot;kind&quot;: &quot;field&quot;, &quot;display&quot;: {&quot;description&quot;: &quot;&quot;}, &quot;category_sort&quot;: &quot;value&quot;, &quot;is_csp&quot;: false, &quot;is_multiple2&quot;: {}}"/>
+    <meta name="calibre:user_metadata:#yanein" content="{&quot;link_column&quot;: &quot;value&quot;, &quot;is_multiple&quot;: null, &quot;rec_index&quot;: 24, &quot;is_custom&quot;: true, &quot;is_category&quot;: false, &quot;label&quot;: &quot;yanein&quot;, &quot;#value#&quot;: true, &quot;is_editable&quot;: true, &quot;#extra#&quot;: null, &quot;table&quot;: &quot;custom_column_4&quot;, &quot;colnum&quot;: 4, &quot;name&quot;: &quot;DZ&quot;, &quot;datatype&quot;: &quot;bool&quot;, &quot;column&quot;: &quot;value&quot;, &quot;search_terms&quot;: [&quot;#yanein&quot;], &quot;kind&quot;: &quot;field&quot;, &quot;display&quot;: {&quot;description&quot;: &quot;&quot;}, &quot;category_sort&quot;: &quot;value&quot;, &quot;is_csp&quot;: false, &quot;is_multiple2&quot;: {}}"/>
+    <dc:identifier id="BookId" opf:scheme="uuid">urn:uuid:863b0683-1e9e-47b2-8da6-c84cdcd09c9c</dc:identifier>
+  </metadata>
+  <manifest>
+    <item href="couv.xhtml" id="html" media-type="application/xhtml+xml"/>
+    <item href="titre.xhtml" id="id39" media-type="application/xhtml+xml"/>
+    <item href="aide.xhtml" id="id38" media-type="application/xhtml+xml"/>
+    <item href="pream.xhtml" id="id41" media-type="application/xhtml+xml"/>
+    <item href="PL29.xhtml" id="ixPL29" media-type="application/xhtml+xml"/>
+    <item href="PL0.xhtml" id="ixPL0" media-type="application/xhtml+xml"/>
+    <item href="PL25.xhtml" id="ixPL25" media-type="application/xhtml+xml"/>
+    <item href="PL1.xhtml" id="ixPL1" media-type="application/xhtml+xml"/>
+    <item href="PL26.xhtml" id="ixPL26" media-type="application/xhtml+xml"/>
+    <item href="PL2.xhtml" id="ixPL2" media-type="application/xhtml+xml"/>
+    <item href="PL27.xhtml" id="ixPL27" media-type="application/xhtml+xml"/>
+    <item href="PL3.xhtml" id="ixPL3" media-type="application/xhtml+xml"/>
+    <item href="PL4.xhtml" id="ixPL4" media-type="application/xhtml+xml"/>
+    <item href="PL5.xhtml" id="ixPL5" media-type="application/xhtml+xml"/>
+    <item href="PL6.xhtml" id="ixPL6" media-type="application/xhtml+xml"/>
+    <item href="PL7.xhtml" id="ixPL7" media-type="application/xhtml+xml"/>
+    <item href="PL8.xhtml" id="ixPL8" media-type="application/xhtml+xml"/>
+    <item href="PL9.xhtml" id="ixPL9" media-type="application/xhtml+xml"/>
+    <item href="PL10.xhtml" id="ixPL10" media-type="application/xhtml+xml"/>
+    <item href="PL11.xhtml" id="ixPL11" media-type="application/xhtml+xml"/>
+    <item href="PL30.xhtml" id="ixPL30" media-type="application/xhtml+xml"/>
+    <item href="PL12.xhtml" id="ixPL12" media-type="application/xhtml+xml"/>
+    <item href="PL13.xhtml" id="ixPL13" media-type="application/xhtml+xml"/>
+    <item href="PL14.xhtml" id="ixPL14" media-type="application/xhtml+xml"/>
+    <item href="PL15.xhtml" id="ixPL15" media-type="application/xhtml+xml"/>
+    <item href="PL16.xhtml" id="ixPL16" media-type="application/xhtml+xml"/>
+    <item href="PL17.xhtml" id="ixPL17" media-type="application/xhtml+xml"/>
+    <item href="PL18.xhtml" id="ixPL18" media-type="application/xhtml+xml"/>
+    <item href="PL31.xhtml" id="ixPL31" media-type="application/xhtml+xml"/>
+    <item href="PL19.xhtml" id="ixPL19" media-type="application/xhtml+xml"/>
+    <item href="PL28.xhtml" id="ixPL28" media-type="application/xhtml+xml"/>
+    <item href="PL20.xhtml" id="ixPL20" media-type="application/xhtml+xml"/>
+    <item href="PL21.xhtml" id="ixPL21" media-type="application/xhtml+xml"/>
+    <item href="PL22.xhtml" id="ixPL22" media-type="application/xhtml+xml"/>
+    <item href="PL23.xhtml" id="ixPL23" media-type="application/xhtml+xml"/>
+    <item href="PL24.xhtml" id="ixPL24" media-type="application/xhtml+xml"/>
+    <item href="epil.xhtml" id="id45" media-type="application/xhtml+xml"/>
+    <item href="reponses.xhtml" id="id" media-type="application/xhtml+xml"/>
+    <item href="PL32.xhtml" id="ixPL32" media-type="application/xhtml+xml"/>
+    <item href="PL33.xhtml" id="ixPL33" media-type="application/xhtml+xml"/>
+    <item href="PL34.xhtml" id="ixPL34" media-type="application/xhtml+xml"/>
+    <item href="PL35.xhtml" id="ixPL35" media-type="application/xhtml+xml"/>
+    <item href="PL36.xhtml" id="ixPL36" media-type="application/xhtml+xml"/>
+    <item href="PL37.xhtml" id="ixPL37" media-type="application/xhtml+xml"/>
+    <item href="PL38.xhtml" id="ixPL38" media-type="application/xhtml+xml"/>
+    <item href="PL39.xhtml" id="ixPL39" media-type="application/xhtml+xml"/>
+    <item href="PL40.xhtml" id="ixPL40" media-type="application/xhtml+xml"/>
+    <item href="PL41.xhtml" id="ixPL41" media-type="application/xhtml+xml"/>
+    <item href="PL42.xhtml" id="ixPL42" media-type="application/xhtml+xml"/>
+    <item href="PL43.xhtml" id="ixPL43" media-type="application/xhtml+xml"/>
+    <item href="PL44.xhtml" id="ixPL44" media-type="application/xhtml+xml"/>
+    <item href="PL45.xhtml" id="ixPL45" media-type="application/xhtml+xml"/>
+    <item href="PL46.xhtml" id="ixPL46" media-type="application/xhtml+xml"/>
+    <item href="PL47.xhtml" id="ixPL47" media-type="application/xhtml+xml"/>
+    <item href="PL48.xhtml" id="ixPL48" media-type="application/xhtml+xml"/>
+    <item href="PL49.xhtml" id="ixPL49" media-type="application/xhtml+xml"/>
+    <item href="PL50.xhtml" id="ixPL50" media-type="application/xhtml+xml"/>
+    <item href="PL51.xhtml" id="ixPL51" media-type="application/xhtml+xml"/>
+    <item href="PL52.xhtml" id="ixPL52" media-type="application/xhtml+xml"/>
+    <item href="PL53.xhtml" id="ixPL53" media-type="application/xhtml+xml"/>
+    <item href="PL54.xhtml" id="ixPL54" media-type="application/xhtml+xml"/>
+    <item href="PL55.xhtml" id="ixPL55" media-type="application/xhtml+xml"/>
+    <item href="PL56.xhtml" id="ixPL56" media-type="application/xhtml+xml"/>
+    <item href="PL57.xhtml" id="ixPL57" media-type="application/xhtml+xml"/>
+    <item href="PL58.xhtml" id="ixPL58" media-type="application/xhtml+xml"/>
+    <item href="PL59.xhtml" id="ixPL59" media-type="application/xhtml+xml"/>
+    <item href="PL60.xhtml" id="ixPL60" media-type="application/xhtml+xml"/>
+    <item href="PL61.xhtml" id="ixPL61" media-type="application/xhtml+xml"/>
+    <item href="PL62.xhtml" id="ixPL62" media-type="application/xhtml+xml"/>
+    <item href="PL63.xhtml" id="ixPL63" media-type="application/xhtml+xml"/>
+    <item href="PL64.xhtml" id="ixPL64" media-type="application/xhtml+xml"/>
+    <item href="PL65.xhtml" id="ixPL65" media-type="application/xhtml+xml"/>
+    <item href="PL66.xhtml" id="ixPL66" media-type="application/xhtml+xml"/>
+    <item href="PL67.xhtml" id="ixPL67" media-type="application/xhtml+xml"/>
+    <item href="PL68.xhtml" id="ixPL68" media-type="application/xhtml+xml"/>
+    <item href="cop.xhtml" id="id37" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="styles.css" id="added" media-type="text/css"/>
+    <item href="couv.jpg" id="couv" media-type="image/jpeg"/>
+    <item href="laffont-100x79.png" id="id40" media-type="image/png"/>
+    <item href="R.png" id="id69" media-type="image/png"/>
+    <item href="rightup.png" id="id68" media-type="image/png"/>
+    <item href="z01.jpg" id="id71" media-type="image/jpeg"/>
+    <item href="z02.jpg" id="id76" media-type="image/jpeg"/>
+    <item href="z03.jpg" id="id77" media-type="image/jpeg"/>
+    <item href="z04.jpg" id="id84" media-type="image/jpeg"/>
+    <item href="z05.jpg" id="id80" media-type="image/jpeg"/>
+    <item href="z06.jpg" id="id81" media-type="image/jpeg"/>
+    <item href="alphonet.ttf" id="id70" media-type="application/x-font-truetype"/>
+    <item href="timesltstd-italic.otf" id="added3" media-type="application/vnd.ms-opentype"/>
+    <item href="timesltstd-roman.otf" id="added2" media-type="application/vnd.ms-opentype"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="html"/>
+    <itemref idref="id39"/>
+    <itemref idref="id38"/>
+    <itemref idref="id41"/>
+    <itemref idref="ixPL29"/>
+    <itemref idref="ixPL0"/>
+    <itemref idref="ixPL25"/>
+    <itemref idref="ixPL1"/>
+    <itemref idref="ixPL26"/>
+    <itemref idref="ixPL2"/>
+    <itemref idref="ixPL27"/>
+    <itemref idref="ixPL3"/>
+    <itemref idref="ixPL4"/>
+    <itemref idref="ixPL5"/>
+    <itemref idref="ixPL6"/>
+    <itemref idref="ixPL7"/>
+    <itemref idref="ixPL8"/>
+    <itemref idref="ixPL9"/>
+    <itemref idref="ixPL10"/>
+    <itemref idref="ixPL11"/>
+    <itemref idref="ixPL30"/>
+    <itemref idref="ixPL12"/>
+    <itemref idref="ixPL13"/>
+    <itemref idref="ixPL14"/>
+    <itemref idref="ixPL15"/>
+    <itemref idref="ixPL16"/>
+    <itemref idref="ixPL17"/>
+    <itemref idref="ixPL18"/>
+    <itemref idref="ixPL31"/>
+    <itemref idref="ixPL19"/>
+    <itemref idref="ixPL28"/>
+    <itemref idref="ixPL20"/>
+    <itemref idref="ixPL21"/>
+    <itemref idref="ixPL22"/>
+    <itemref idref="ixPL23"/>
+    <itemref idref="ixPL24"/>
+    <itemref idref="id45"/>
+    <itemref idref="id"/>
+    <itemref idref="ixPL32"/>
+    <itemref idref="ixPL33"/>
+    <itemref idref="ixPL34"/>
+    <itemref idref="ixPL35"/>
+    <itemref idref="ixPL36"/>
+    <itemref idref="ixPL37"/>
+    <itemref idref="ixPL38"/>
+    <itemref idref="ixPL39"/>
+    <itemref idref="ixPL40"/>
+    <itemref idref="ixPL41"/>
+    <itemref idref="ixPL42"/>
+    <itemref idref="ixPL43"/>
+    <itemref idref="ixPL44"/>
+    <itemref idref="ixPL45"/>
+    <itemref idref="ixPL46"/>
+    <itemref idref="ixPL47"/>
+    <itemref idref="ixPL48"/>
+    <itemref idref="ixPL49"/>
+    <itemref idref="ixPL50"/>
+    <itemref idref="ixPL51"/>
+    <itemref idref="ixPL52"/>
+    <itemref idref="ixPL53"/>
+    <itemref idref="ixPL54"/>
+    <itemref idref="ixPL55"/>
+    <itemref idref="ixPL56"/>
+    <itemref idref="ixPL57"/>
+    <itemref idref="ixPL58"/>
+    <itemref idref="ixPL59"/>
+    <itemref idref="ixPL60"/>
+    <itemref idref="ixPL61"/>
+    <itemref idref="ixPL62"/>
+    <itemref idref="ixPL63"/>
+    <itemref idref="ixPL64"/>
+    <itemref idref="ixPL65"/>
+    <itemref idref="ixPL66"/>
+    <itemref idref="ixPL67"/>
+    <itemref idref="ixPL68"/>
+    <itemref idref="id37"/>
+  </spine>
+  <guide>
+    <reference href="couv.xhtml" type="cover"/>
+  </guide>
+</package>

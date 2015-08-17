@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="bookid" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcterms="http://purl.org/dc/terms/">
+<metadata>
+<dc:title>Мир в ореховой скорлупке [илл. книга-журнал]</dc:title>
+<dc:creator>Стивен Хокинг</dc:creator>
+<meta name="FB2.book-info.translator" content="А. Г. Сергеев"/>
+<dc:language>ru</dc:language>
+<dc:description>Один из самых блестящих ученых нашего времени, известный не только смелостью идей, но также ясностью и остроумием их выражения, Хокинг увлекает нас к переднему краю исследований, где правда кажется причудливее вымысла, чтобы объяснить простыми словами принципы, которые управляют Вселенной. Великолепные цветные иллюстрации служат нам вехами в этом странствии по Стране чудес, где частицы, мембраны и струны движутся в одиннадцати измерениях, где черные дыры испаряются, и где космическое семя, из которого выросла наша Вселенная, было крохотным орешком.  Книга-журнал состоит из иллюстраций (215), со вставками текста. Поэтому размер ее больше  стандартной fb2 книги. Иллюстрации вычищены и подготовлены для устройств с экранами от 6" (800x600) и более, для чтения рекомендуется CoolReader. Просьба НЕ пересжимать иллюстрации , т. к. они уже сжаты по максимуму (где-то Png с 15 цветами и более, где то jpg с прогрессивной палитрой с q. от 50–90). Делать размер иллюстраций меньше не имеет смысла — текст на илл. будет не читаемый, во вторых — именно по этой причине  книга переделана с нуля, — в библиотеке была только версия с мелкими илл. плохого качества. Макс. размер картинок: 760(высота) x 570(ширина). Книга распознавалась с ~300mb pdf, часть картинок были заменены на идент. с сети (качество лучше), часть объединены т. к. иногда одна илл. — на двух страницах бум. книги. Также исправлена последовательность илл. в тексте — в рус. оригинале они шли на 2 стр. раньше, здесь илл. идет сразу после ссылки в тексте. Psychedelic  </dc:description>
+<meta name="FB2.book-info.date" content="2007"/>
+<dc:date>2007</dc:date>
+<meta name="FB2.document-info.program-used" content="ABBYY FineReader 11, FictionBook Editor Release 2.6.6"/>
+<meta name="FB2.document-info.src-ocr" content="ABBYY FineReader 11"/>
+<meta name="FB2.document-info.history" content="1.0 — Psychedelic 2013, август 1.1 — Psychedelic. Развернул илл. 079 на 180 вправо. 1.2 — Psychedelic мелкие исправления текста и илл. +1 пропущенная илл. "/>
+<meta name="FB2.document-info.id" content="{754B4B98-0681-40C0-8A73-9E02C6AB3903}"/>
+<meta name="FB2.document-info.version" content="1.2"/>
+<meta name="FB2.document-info.date" content="2007"/>
+<dc:identifier id="bookid">urn:uuid:d0f87fd1-c125-4108-a1b3-6c5dacc11edd</dc:identifier>
+<dc:identifier id="bookid1">{754B4B98-0681-40C0-8A73-9E02C6AB3903}</dc:identifier>
+<dc:publisher>Амфора</dc:publisher>
+<dc:identifier id="bookid2">isbn:978-5-367-00614-8</dc:identifier>
+<meta name="FB2EPUB.version" content="0.5.0"/>
+<meta name="FB2EPUB.conversionDate" content="2013-11-12T14:06:32+04:00"/>
+<meta name="cover" content="id1"/>
+</metadata>
+<manifest>
+<item href="images/i_095.jpg" media-type="image/jpeg" id="id2"/>
+<item href="images/i_144.jpg" media-type="image/jpeg" id="id3"/>
+<item href="images/i_195.jpg" media-type="image/jpeg" id="id4"/>
+<item href="images/i_170.png" media-type="image/png" id="id5"/>
+<item href="images/i_033.jpg" media-type="image/jpeg" id="id6"/>
+<item href="images/i_188.png" media-type="image/png" id="id7"/>
+<item href="images/i_084.jpg" media-type="image/jpeg" id="id8"/>
+<item href="images/i_133.jpg" media-type="image/jpeg" id="id9"/>
+<item href="images/i_126.png" media-type="image/png" id="id10"/>
+<item href="images/i_184.jpg" media-type="image/jpeg" id="id11"/>
+<item href="images/i_022.jpg" media-type="image/jpeg" id="id12"/>
+<item href="fonts/Times-New-Roman-700-Italic-d0f87fd1-c125-4108-a1b3-6c5dacc11edd.otf" media-type="application/vnd.ms-opentype" id="id13"/>
+<item href="images/i_004.jpg" media-type="image/jpeg" id="id14"/>
+<item href="images/i_073.jpg" media-type="image/jpeg" id="id15"/>
+<item href="images/i_122.jpg" media-type="image/jpeg" id="id16"/>
+<item href="images/i_115.png" media-type="image/png" id="id17"/>
+<item href="images/i_173.jpg" media-type="image/jpeg" id="id18"/>
+<item href="images/i_011.jpg" media-type="image/jpeg" id="id19"/>
+<item href="images/i_166.png" media-type="image/png" id="id20"/>
+<item href="images/i_029.jpg" media-type="image/jpeg" id="id21"/>
+<item href="images/i_062.jpg" media-type="image/jpeg" id="id22"/>
+<item href="images/i_055.png" media-type="image/png" id="id23"/>
+<item href="images/i_111.jpg" media-type="image/jpeg" id="id24"/>
+<item href="images/i_104.png" media-type="image/png" id="id25"/>
+<item href="images/i_162.jpg" media-type="image/jpeg" id="id26"/>
+<item href="images/i_018.jpg" media-type="image/jpeg" id="id27"/>
+<item href="images/i_069.jpg" media-type="image/jpeg" id="id28"/>
+<item href="images/i_044.png" media-type="image/png" id="id29"/>
+<item href="images/i_100.jpg" media-type="image/jpeg" id="id30"/>
+<item href="images/i_151.jpg" media-type="image/jpeg" id="id31"/>
+<item href="images/i_200.jpg" media-type="image/jpeg" id="id32"/>
+<item href="images/i_169.jpg" media-type="image/jpeg" id="id33"/>
+<item href="images/i_058.jpg" media-type="image/jpeg" id="id34"/>
+<item href="images/i_107.jpg" media-type="image/jpeg" id="id35"/>
+<item href="images/i_091.jpg" media-type="image/jpeg" id="id36"/>
+<item href="images/i_140.jpg" media-type="image/jpeg" id="id37"/>
+<item href="images/i_207.jpg" media-type="image/jpeg" id="id38"/>
+<item href="images/i_191.jpg" media-type="image/jpeg" id="id39"/>
+<item href="images/i_080.jpg" media-type="image/jpeg" id="id40"/>
+<item href="images/i_098.jpg" media-type="image/jpeg" id="id41"/>
+<item href="images/i_180.jpg" media-type="image/jpeg" id="id42"/>
+<item href="images/i_198.jpg" media-type="image/jpeg" id="id43"/>
+<item href="images/i_087.jpg" media-type="image/jpeg" id="id44"/>
+<item href="images/i_136.jpg" media-type="image/jpeg" id="id45"/>
+<item href="images/i_129.png" media-type="image/png" id="id46"/>
+<item href="fonts/Times-New-Roman-700-d0f87fd1-c125-4108-a1b3-6c5dacc11edd.otf" media-type="application/vnd.ms-opentype" id="id47"/>
+<item href="images/i_187.jpg" media-type="image/jpeg" id="id48"/>
+<item href="images/i_025.jpg" media-type="image/jpeg" id="id49"/>
+<item href="images/i_211.png" media-type="image/png" id="id50"/>
+<item href="images/i_007.jpg" media-type="image/jpeg" id="id51"/>
+<item href="images/i_076.jpg" media-type="image/jpeg" id="id52"/>
+<item href="images/i_051.png" media-type="image/png" id="id53"/>
+<item href="images/i_125.jpg" media-type="image/jpeg" id="id54"/>
+<item href="images/i_118.png" media-type="image/png" id="id55"/>
+<item href="images/i_176.jpg" media-type="image/jpeg" id="id56"/>
+<item href="images/i_014.jpg" media-type="image/jpeg" id="id57"/>
+<item href="cover.xhtml" media-type="application/xhtml+xml" id="id58"/>
+<item href="images/i_065.jpg" media-type="image/jpeg" id="id59"/>
+<item href="images/i_040.png" media-type="image/png" id="id60"/>
+<item href="images/i_114.jpg" media-type="image/jpeg" id="id61"/>
+<item href="images/i_214.jpg" media-type="image/jpeg" id="id62"/>
+<item href="images/i_158.png" media-type="image/png" id="id63"/>
+<item href="images/i_054.jpg" media-type="image/jpeg" id="id64"/>
+<item href="images/i_047.png" media-type="image/png" id="id65"/>
+<item href="images/i_103.jpg" media-type="image/jpeg" id="id66"/>
+<item href="images/i_154.jpg" media-type="image/jpeg" id="id67"/>
+<item href="images/i_203.jpg" media-type="image/jpeg" id="id68"/>
+<item href="images/i_147.png" media-type="image/png" id="id69"/>
+<item href="images/i_043.jpg" media-type="image/jpeg" id="id70"/>
+<item href="images/i_036.png" media-type="image/png" id="id71"/>
+<item href="images/i_094.jpg" media-type="image/jpeg" id="id72"/>
+<item href="images/i_143.jpg" media-type="image/jpeg" id="id73"/>
+<item href="images/i_194.jpg" media-type="image/jpeg" id="id74"/>
+<item href="images/i_032.jpg" media-type="image/jpeg" id="id75"/>
+<item href="images/i_083.jpg" media-type="image/jpeg" id="id76"/>
+<item href="images/i_132.jpg" media-type="image/jpeg" id="id77"/>
+<item href="images/i_021.jpg" media-type="image/jpeg" id="id78"/>
+<item href="images/i_039.jpg" media-type="image/jpeg" id="id79"/>
+<item href="images/i_003.jpg" media-type="image/jpeg" id="id80"/>
+<item href="images/i_072.jpg" media-type="image/jpeg" id="id81"/>
+<item href="images/i_139.jpg" media-type="image/jpeg" id="id82"/>
+<item href="images/i_010.jpg" media-type="image/jpeg" id="id83"/>
+<item href="images/i_165.png" media-type="image/png" id="id84"/>
+<item href="images/i_028.jpg" media-type="image/jpeg" id="id85"/>
+<item href="images/i_061.jpg" media-type="image/jpeg" id="id86"/>
+<item href="images/i_079.jpg" media-type="image/jpeg" id="id87"/>
+<item href="images/i_110.jpg" media-type="image/jpeg" id="id88"/>
+<item href="images/i_128.jpg" media-type="image/jpeg" id="id89"/>
+<item href="images/i_179.jpg" media-type="image/jpeg" id="id90"/>
+<item href="images/i_017.jpg" media-type="image/jpeg" id="id91"/>
+<item href="images/i_068.jpg" media-type="image/jpeg" id="id92"/>
+<item href="images/i_150.jpg" media-type="image/jpeg" id="id93"/>
+<item href="images/i_168.jpg" media-type="image/jpeg" id="id94"/>
+<item href="images/i_057.jpg" media-type="image/jpeg" id="id95"/>
+<item href="images/i_106.jpg" media-type="image/jpeg" id="id96"/>
+<item href="images/i_157.jpg" media-type="image/jpeg" id="id97"/>
+<item href="images/i_206.jpg" media-type="image/jpeg" id="id98"/>
+<item href="images/i_190.jpg" media-type="image/jpeg" id="id99"/>
+<item href="images/i_183.png" media-type="image/png" id="id100"/>
+<item href="images/i_046.jpg" media-type="image/jpeg" id="id101"/>
+<item href="images/i_097.jpg" media-type="image/jpeg" id="id102"/>
+<item href="images/i_146.jpg" media-type="image/jpeg" id="id103"/>
+<item href="images/i_121.png" media-type="image/png" id="id104"/>
+<item href="images/i_197.jpg" media-type="image/jpeg" id="id105"/>
+<item href="images/i_172.png" media-type="image/png" id="id106"/>
+<item href="images/cover.jpg" media-type="image/jpeg" id="id1"/>
+<item href="images/i_035.jpg" media-type="image/jpeg" id="id107"/>
+<item href="ch1-9.xhtml" media-type="application/xhtml+xml" id="id108"/>
+<item href="images/i_086.jpg" media-type="image/jpeg" id="id109"/>
+<item href="images/i_135.jpg" media-type="image/jpeg" id="id110"/>
+<item href="images/i_186.jpg" media-type="image/jpeg" id="id111"/>
+<item href="images/i_161.png" media-type="image/png" id="id112"/>
+<item href="images/i_024.jpg" media-type="image/jpeg" id="id113"/>
+<item href="images/i_210.png" media-type="image/png" id="id114"/>
+<item href="images/i_006.jpg" media-type="image/jpeg" id="id115"/>
+<item href="images/i_075.jpg" media-type="image/jpeg" id="id116"/>
+<item href="images/i_050.png" media-type="image/png" id="id117"/>
+<item href="images/i_117.png" media-type="image/png" id="id118"/>
+<item href="images/i_175.jpg" media-type="image/jpeg" id="id119"/>
+<item href="images/i_013.jpg" media-type="image/jpeg" id="id120"/>
+<item href="ch1-6.xhtml" media-type="application/xhtml+xml" id="id121"/>
+<item href="images/i_064.jpg" media-type="image/jpeg" id="id122"/>
+<item href="images/i_113.jpg" media-type="image/jpeg" id="id123"/>
+<item href="images/i_090.png" media-type="image/png" id="id124"/>
+<item href="ch1-7.xhtml" media-type="application/xhtml+xml" id="id125"/>
+<item href="images/i_164.jpg" media-type="image/jpeg" id="id126"/>
+<item href="ch1-8.xhtml" media-type="application/xhtml+xml" id="id127"/>
+<item href="images/i_102.jpg" media-type="image/jpeg" id="id128"/>
+<item href="images/i_153.jpg" media-type="image/jpeg" id="id129"/>
+<item href="images/i_202.jpg" media-type="image/jpeg" id="id130"/>
+<item href="images/i_093.jpg" media-type="image/jpeg" id="id131"/>
+<item href="ch1-4.xhtml" media-type="application/xhtml+xml" id="id132"/>
+<item href="images/i_142.jpg" media-type="image/jpeg" id="id133"/>
+<item href="images/i_193.jpg" media-type="image/jpeg" id="id134"/>
+<item href="images/i_031.jpg" media-type="image/jpeg" id="id135"/>
+<item href="ch1-5.xhtml" media-type="application/xhtml+xml" id="id136"/>
+<item href="images/i_082.jpg" media-type="image/jpeg" id="id137"/>
+<item href="images/i_131.jpg" media-type="image/jpeg" id="id138"/>
+<item href="images/i_149.jpg" media-type="image/jpeg" id="id139"/>
+<item href="images/i_124.png" media-type="image/png" id="id140"/>
+<item href="ch1-10.xhtml" media-type="application/xhtml+xml" id="id141"/>
+<item href="images/i_182.jpg" media-type="image/jpeg" id="id142"/>
+<item href="images/i_020.jpg" media-type="image/jpeg" id="id143"/>
+<item href="images/i_038.jpg" media-type="image/jpeg" id="id144"/>
+<item href="images/i_002.jpg" media-type="image/jpeg" id="id145"/>
+<item href="images/i_071.jpg" media-type="image/jpeg" id="id146"/>
+<item href="ch1-11.xhtml" media-type="application/xhtml+xml" id="id147"/>
+<item href="images/i_120.jpg" media-type="image/jpeg" id="id148"/>
+<item href="images/i_138.jpg" media-type="image/jpeg" id="id149"/>
+<item href="images/i_171.jpg" media-type="image/jpeg" id="id150"/>
+<item href="ch1-2.xhtml" media-type="application/xhtml+xml" id="id151"/>
+<item href="images/i_189.jpg" media-type="image/jpeg" id="id152"/>
+<item href="images/i_027.jpg" media-type="image/jpeg" id="id153"/>
+<item href="images/i_213.png" media-type="image/png" id="id154"/>
+<item href="images/i_009.jpg" media-type="image/jpeg" id="id155"/>
+<item href="images/i_060.jpg" media-type="image/jpeg" id="id156"/>
+<item href="images/i_053.png" media-type="image/png" id="id157"/>
+<item href="images/i_078.jpg" media-type="image/jpeg" id="id158"/>
+<item href="ch1-3.xhtml" media-type="application/xhtml+xml" id="id159"/>
+<item href="images/i_127.jpg" media-type="image/jpeg" id="id160"/>
+<item href="images/i_160.jpg" media-type="image/jpeg" id="id161"/>
+<item href="images/i_178.jpg" media-type="image/jpeg" id="id162"/>
+<item href="images/i_016.jpg" media-type="image/jpeg" id="id163"/>
+<item href="images/i_042.png" media-type="image/png" id="id164"/>
+<item href="images/i_067.jpg" media-type="image/jpeg" id="id165"/>
+<item href="images/i_116.jpg" media-type="image/jpeg" id="id166"/>
+<item href="images/i_109.png" media-type="image/png" id="id167"/>
+<item href="images/i_167.jpg" media-type="image/jpeg" id="id168"/>
+<item href="ch1.xhtml" media-type="application/xhtml+xml" id="id169"/>
+<item href="images/i_209.png" media-type="image/png" id="id170"/>
+<item href="images/i_056.jpg" media-type="image/jpeg" id="id171"/>
+<item href="ch2.xhtml" media-type="application/xhtml+xml" id="id172"/>
+<item href="images/i_049.png" media-type="image/png" id="id173"/>
+<item href="images/i_105.jpg" media-type="image/jpeg" id="id174"/>
+<item href="images/i_156.jpg" media-type="image/jpeg" id="id175"/>
+<item href="ch1-1.xhtml" media-type="application/xhtml+xml" id="id176"/>
+<item href="images/i_205.jpg" media-type="image/jpeg" id="id177"/>
+<item href="images/i_096.jpg" media-type="image/jpeg" id="id178"/>
+<item href="images/i_145.jpg" media-type="image/jpeg" id="id179"/>
+<item href="images/i_089.png" media-type="image/png" id="id180"/>
+<item href="images/i_034.jpg" media-type="image/jpeg" id="id181"/>
+<item href="fonts/Times-New-Roman-400-Italic-d0f87fd1-c125-4108-a1b3-6c5dacc11edd.otf" media-type="application/vnd.ms-opentype" id="id182"/>
+<item href="images/i_085.jpg" media-type="image/jpeg" id="id183"/>
+<item href="images/i_134.jpg" media-type="image/jpeg" id="id184"/>
+<item href="images/i_185.jpg" media-type="image/jpeg" id="id185"/>
+<item href="style.css" media-type="text/css" id="id186"/>
+<item href="images/i_023.jpg" media-type="image/jpeg" id="id187"/>
+<item href="images/i_005.jpg" media-type="image/jpeg" id="id188"/>
+<item href="images/i_074.jpg" media-type="image/jpeg" id="id189"/>
+<item href="images/i_123.jpg" media-type="image/jpeg" id="id190"/>
+<item href="images/i_012.jpg" media-type="image/jpeg" id="id191"/>
+<item href="images/i_163.jpg" media-type="image/jpeg" id="id192"/>
+<item href="images/i_019.jpg" media-type="image/jpeg" id="id193"/>
+<item href="images/i_045.png" media-type="image/png" id="id194"/>
+<item href="images/i_101.jpg" media-type="image/jpeg" id="id195"/>
+<item href="images/i_119.jpg" media-type="image/jpeg" id="id196"/>
+<item href="images/i_152.jpg" media-type="image/jpeg" id="id197"/>
+<item href="images/i_201.jpg" media-type="image/jpeg" id="id198"/>
+<item href="images/i_196.png" media-type="image/png" id="id199"/>
+<item href="images/i_108.jpg" media-type="image/jpeg" id="id200"/>
+<item href="images/i_092.jpg" media-type="image/jpeg" id="id201"/>
+<item href="images/i_141.jpg" media-type="image/jpeg" id="id202"/>
+<item href="images/i_159.jpg" media-type="image/jpeg" id="id203"/>
+<item href="images/i_208.jpg" media-type="image/jpeg" id="id204"/>
+<item href="images/i_192.jpg" media-type="image/jpeg" id="id205"/>
+<item href="images/i_030.jpg" media-type="image/jpeg" id="id206"/>
+<item href="images/i_081.jpg" media-type="image/jpeg" id="id207"/>
+<item href="images/i_130.jpg" media-type="image/jpeg" id="id208"/>
+<item href="images/i_099.jpg" media-type="image/jpeg" id="id209"/>
+<item href="images/i_148.jpg" media-type="image/jpeg" id="id210"/>
+<item href="fonts/Times-New-Roman-400-d0f87fd1-c125-4108-a1b3-6c5dacc11edd.otf" media-type="application/vnd.ms-opentype" id="id211"/>
+<item href="images/i_181.jpg" media-type="image/jpeg" id="id212"/>
+<item href="images/i_199.jpg" media-type="image/jpeg" id="id213"/>
+<item href="images/i_174.png" media-type="image/png" id="id214"/>
+<item href="images/i_037.jpg" media-type="image/jpeg" id="id215"/>
+<item href="images/i_001.jpg" media-type="image/jpeg" id="id216"/>
+<item href="images/i_070.jpg" media-type="image/jpeg" id="id217"/>
+<item href="images/i_088.jpg" media-type="image/jpeg" id="id218"/>
+<item href="images/i_063.png" media-type="image/png" id="id219"/>
+<item href="images/i_137.jpg" media-type="image/jpeg" id="id220"/>
+<item href="images/i_112.png" media-type="image/png" id="id221"/>
+<item href="toc.ncx" media-type="application/x-dtbncx+xml" id="id222"/>
+<item href="images/i_026.jpg" media-type="image/jpeg" id="id223"/>
+<item href="images/i_212.png" media-type="image/png" id="id224"/>
+<item href="images/i_008.jpg" media-type="image/jpeg" id="id225"/>
+<item href="images/i_077.jpg" media-type="image/jpeg" id="id226"/>
+<item href="images/i_052.png" media-type="image/png" id="id227"/>
+<item href="images/i_177.jpg" media-type="image/jpeg" id="id228"/>
+<item href="images/i_015.jpg" media-type="image/jpeg" id="id229"/>
+<item href="images/i_066.jpg" media-type="image/jpeg" id="id230"/>
+<item href="images/i_041.png" media-type="image/png" id="id231"/>
+<item href="images/i_059.png" media-type="image/png" id="id232"/>
+<item href="images/i_215.jpg" media-type="image/jpeg" id="id233"/>
+<item href="images/i_048.png" media-type="image/png" id="id234"/>
+<item href="images/i_155.jpg" media-type="image/jpeg" id="id235"/>
+<item href="images/i_204.jpg" media-type="image/jpeg" id="id236"/>
+</manifest>
+<spine toc="id222">
+<itemref idref="id58"/>
+<itemref idref="id169"/>
+<itemref idref="id176"/>
+<itemref idref="id151"/>
+<itemref idref="id159"/>
+<itemref idref="id132"/>
+<itemref idref="id136"/>
+<itemref idref="id121"/>
+<itemref idref="id125"/>
+<itemref idref="id127"/>
+<itemref idref="id108"/>
+<itemref idref="id141"/>
+<itemref idref="id147"/>
+<itemref idref="id172"/>
+</spine>
+<guide><reference href="images/cover.jpg" type="cover" title="cover"/>
+</guide></package>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:identifier id="bookid" opf:scheme="ISBN">9785000574928</dc:identifier>
+    <dc:title>Секреты высыпающейся мамы</dc:title>
+    <dc:creator opf:role="aut">Трейси Хогг, Мелинда Блау</dc:creator>
+    <dc:language>ru</dc:language>
+    <dc:publisher>Манн, Иванов и Фербер</dc:publisher>
+    <dc:date opf:event="modification">2015-04-21</dc:date>
+    <dc:description>Тысячи родителей по всему миру уже обратились к книгам известного эксперта Трейси Хогг, чтобы наладить общение с их маленькими детьми. С этой книгой вы освоите «banguage» (baby-language) — язык, на котором маленькие дети сигнализируют вам о своих потребностях, чувствах и эмоциях, сможете лучше понимать своего ребенка и заниматься воспитанием с учетом уникальных свойств его личности, характера и стадии развития. Это книга для всех родителей и тех, кто ждет пополнения в семье.</dc:description>
+    <dc:rights>© 2005 by Tracy Hogg and Melinda Blau</dc:rights>
+    <dc:rights>© Перевод, издание на русском языке, оформление . ООО «Манн, Иванов и Фербер», 2015</dc:rights>
+    <dc:contributor opf:role="pro">Webkniga.ru</dc:contributor>
+    <dc:type>Семья и взаимоотношения</dc:type>
+    <meta content="Adobe InDesign 9.3" name="generator" />
+    <meta name="cover" content="cover.jpg" />
+    <meta content="0.7.4" name="Sigil version" />
+  </metadata>
+  <manifest>
+    <item href="Text/cover.xhtml" id="cover.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/end.xhtml" id="end.xhtml" media-type="application/xhtml+xml" />
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
+    <item href="Styles/idGeneratedStyles.css" id="idGeneratedStyles.css" media-type="text/css" />
+    <item href="Images/cover.jpg" id="cover.jpg" media-type="image/jpeg" />
+    <item href="Text/title1.xhtml" id="title1.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/title2.xhtml" id="title2.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/info.xhtml" id="info.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/pre_rus.xhtml" id="pre_rus.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/vv.xhtml" id="vv.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/gl1.xhtml" id="gl1.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/gl2.xhtml" id="gl2.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/gl3.xhtml" id="gl3.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/gl4.xhtml" id="gl4.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/gl5.xhtml" id="gl5.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/gl6.xhtml" id="gl6.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/gl7.xhtml" id="gl7.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/gl8.xhtml" id="gl8.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/gl9.xhtml" id="gl9.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/gl10.xhtml" id="gl10.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/thanks.xhtml" id="thanks.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/max.xhtml" id="max.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/links.xhtml" id="links.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/TOC.xhtml" id="TOC.xhtml" media-type="application/xhtml+xml" />
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover.xhtml" />
+    <itemref idref="title1.xhtml" />
+    <itemref idref="title2.xhtml" />
+    <itemref idref="info.xhtml" />
+    <itemref idref="pre_rus.xhtml" />
+    <itemref idref="vv.xhtml" />
+    <itemref idref="gl1.xhtml" />
+    <itemref idref="gl2.xhtml" />
+    <itemref idref="gl3.xhtml" />
+    <itemref idref="gl4.xhtml" />
+    <itemref idref="gl5.xhtml" />
+    <itemref idref="gl6.xhtml" />
+    <itemref idref="gl7.xhtml" />
+    <itemref idref="gl8.xhtml" />
+    <itemref idref="gl9.xhtml" />
+    <itemref idref="gl10.xhtml" />
+    <itemref idref="thanks.xhtml" />
+    <itemref idref="links.xhtml" />
+    <itemref idref="TOC.xhtml" />
+    <itemref idref="max.xhtml" />
+    <itemref idref="end.xhtml" />
+  </spine>
+  <guide>
+    <reference href="Text/cover.xhtml" title="Обложка" type="cover" />
+    <reference href="Text/title1.xhtml" title="Титульная страница" type="title-page" />
+    <reference href="Text/TOC.xhtml" title="Оглавление" type="toc" />
+  </guide>
+</package>
