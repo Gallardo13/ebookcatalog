@@ -30,8 +30,11 @@ type Book struct {
 	Description string
 }
 
-// slice книг
-var books []Book
+type Books struct {
+	SliceOfBooks []Book
+}
+
+var b Books
 
 // структуры xml файлов
 type metaData struct {
@@ -75,6 +78,14 @@ const (
 	mainDirectory = "files/books/"
 )
 
+func (b *Books) addBook(book Book) {
+	b.SliceOfBooks = append(b.SliceOfBooks, book)
+}
+
+func (b *Books) showBooks(writer http.ResponseWriter) {
+	t.ExecuteTemplate(writer, "index", b.SliceOfBooks)
+}
+
 func init() {
 	var err error
 	t, err = template.ParseFiles("index.html")
@@ -85,7 +96,7 @@ func init() {
 
 func main() {
 	i = 0
-	books = make([]Book, 0)
+	b.SliceOfBooks = make([]Book, 0)
 
 	log.Printf("Server start.")
 	http.HandleFunc("/", page)
@@ -117,7 +128,8 @@ func main() {
 
 func page(writer http.ResponseWriter, request *http.Request) {
 	writer.Header().Set("Content-Type", "text/html")
-	t.ExecuteTemplate(writer, "index", books)
+	b.showBooks(writer)
+
 }
 
 // функция обрабатывает книгу book, вычленяя нужную информацию
@@ -197,7 +209,7 @@ func process(book string) {
 		p.Metadata.Language = "Язык: Немецкий"
 	}
 	p.Metadata.Description = "Описание:" + p.Metadata.Description
-	books = append(books, Book{book, pathToPictureFile, p.Metadata.Author, p.Metadata.Title, p.Metadata.Language, p.Metadata.Description})
+	b.addBook(Book{book, pathToPictureFile, p.Metadata.Author, p.Metadata.Title, p.Metadata.Language, p.Metadata.Description})
 	log.Println("Was added book: " + p.Metadata.Title)
 }
 
